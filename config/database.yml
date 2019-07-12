@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: my-guidebook_production
-  username: my-guidebook
-  password: <%= ENV['MY-GUIDEBOOK_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
