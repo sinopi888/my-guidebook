@@ -1,0 +1,27 @@
+= render 'layouts/header'
+.showpost
+  .side-bar
+    = render 'render/side-bar'
+    .container
+      .newpost
+        .newpost__title
+          Title
+          %span.title
+            = @post.title
+        .newpost__image
+          - if @post.images.attached?
+            - @post.images.each do |image|
+              = image_tag image
+        .newpost__country
+          Country
+          %span.country
+            = @post.country
+        .newpost__profile
+          = @post.user.name
+        .newpost__text
+          = @post.text
+        .newpost__notepoint
+          Important Point
+          .notepoint
+            = @post.notepoint
+    

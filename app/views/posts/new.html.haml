@@ -1,0 +1,31 @@
+= render 'layouts/header'
+.postnew
+  .side-bar
+    = render 'render/side-bar'
+    .container
+      .container__head
+        New Post
+      .post
+      = form_with model: @post, local: true do |f|
+        .post__title
+          = f.label "Title", class: "item"
+          %br
+          = f.text_field :title, class: "title", placeholder: "タイトル（必須・４０文字以内）"
+        .post__photo
+          = f.label "Photo", class: "item"
+          %br
+          = f.file_field :images, multiple: true, class: "image"
+        .post__country
+          = f.label "Country", class: "item"
+          %br
+          = f.text_field :country, class: "country", placeholder: "必須・国名、都市名"
+        .post__text
+          = f.label "Text", class: "item"
+          %br
+          = f.text_area :text, class: "text", placeholder: "必須・１０００文字以内"
+        .post__notepoint
+          = f.label "Important Point", class: "item"
+          %br
+          = f.text_area :notepoint, class: "notepoint", placeholder: "任意・渡航時の注意点など"
+        .post__btn
+          = f.submit "Posting", class: 'btn'

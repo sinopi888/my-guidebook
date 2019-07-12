@@ -1,0 +1,9 @@
+= render 'layouts/header'
+.postsindex
+  .side-bar
+    = render 'render/side-bar'
+    .container
+      .post-list
+        - @posts.each do |post|
+          %li
+            = link_to "#{post.title}", post_path(post.id)
