@@ -1,0 +1,22 @@
+.toppage {
+  .default-container {
+    background: rgb(202, 238, 238);
+    .container {
+      // font-family: 
+      .title {
+
+      }
+    }
+    .side-container {
+      .side-list {
+        &__item {
+          list-style: none;
+          .item {
+            text-decoration: none;
+
+          }
+        }
+      }
+    }
+  }
+}

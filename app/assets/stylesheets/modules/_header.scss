@@ -1,0 +1,16 @@
+.header {
+  height: 90px;
+  background: linear-gradient(-135deg, #fffb03de, rgba(0, 235, 252, 0.795));
+  width: auto;
+  &__title {
+    font-family: fantasy;
+    font-size: 35px;
+    color: #333;
+    line-height: 90px;
+    margin-left: 30px;
+    .root {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}

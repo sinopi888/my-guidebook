@@ -1,0 +1,72 @@
+.showpost {
+  background: #fff;
+  .side-bar {
+    display: flex;
+    .container {
+      margin-top: 40px;
+      text-align: center;
+      padding: 30px;
+      width: 700px;
+      height: 900px;
+      .newpost {
+        &__title {
+          font-family: fantasy;
+          text-align: left;
+          font-size: 20px;
+          margin-left: 20px;
+          height: 65px;
+          width: 600px;
+          .title {
+            font-size: 16px;
+            margin-left: 20px;
+          }
+        }
+        &__image {
+
+        }
+        &__country {
+          font-family: fantasy;
+          text-align: left;
+          font-size: 20px;
+          line-height: 40px;
+          margin-left: 20px;
+          height: 65px;
+          width: 600px;
+          .country {
+            font-size: 16px;
+            margin-left: 20px;
+          }
+        }
+        &__profile {
+          text-align: left;
+          font-size: 20px;
+          line-height: 40px;
+          margin-left: 20px;
+          height: 40px;
+          width: 600px;
+        }
+        &__text {
+          text-align: left;
+          font-size: 16px;
+          line-height: 40px;
+          margin-left: 20px;
+          height: auto;
+          width: 600px;
+        }
+        &__notepoint {
+          font-family: fantasy;
+          text-align: left;
+          font-size: 20px;
+          line-height: 40px;
+          margin-left: 20px;
+          height: 200px;
+          width: 600px;
+          .notepoint {
+            font-size: 16px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
