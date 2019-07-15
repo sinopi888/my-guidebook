@@ -9,9 +9,7 @@
           %span.title
             = @post.title
         .newpost__image
-          -# - if @post.images.attached?
-          -#   - @post.images.each do |image|
-          -#     = image_tag image
+          = @post.image.url
         .newpost__country
           Country
           %span.country
