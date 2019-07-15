@@ -9,9 +9,9 @@
           %span.title
             = @post.title
         .newpost__image
-          - if @post.images.attached?
-            - @post.images.each do |image|
-              = image_tag image
+          -# - if @post.images.attached?
+          -#   - @post.images.each do |image|
+          -#     = image_tag image
         .newpost__country
           Country
           %span.country
