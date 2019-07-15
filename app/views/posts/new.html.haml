@@ -14,7 +14,7 @@
         .post__photo
           = f.label "Photo", class: "item"
           %br
-          = f.file_field :images, multiple: true, class: "image"
+          = f.file_field :image, multipart: true, class: "image"
         .post__country
           = f.label "Country", class: "item"
           %br
