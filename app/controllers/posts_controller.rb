@@ -13,7 +13,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     @post.save
-      flash[:success] = "ユーザを登録しました"
+      flash[:success] = "投稿が完了しました"
       redirect_to @post
   end
 
@@ -33,6 +33,6 @@ class PostsController < ApplicationController
   private
 
     def post_params
-      params.require(:post).permit(:title, :text, :notepoint, :country, :user_id)
+      params.require(:post).permit(:title, :text, :notepoint, :country, :user_id, :image)
     end
 end
