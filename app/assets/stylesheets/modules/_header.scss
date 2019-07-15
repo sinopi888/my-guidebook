@@ -1,9 +1,10 @@
 .header {
   height: 90px;
-  background: linear-gradient(-135deg, #fffb03de, rgba(0, 235, 252, 0.795));
+  background: linear-gradient(-135deg, #f0ecc6, rgb(163, 211, 243));
   width: auto;
   &__title {
-    font-family: fantasy;
+    font-family: 'Courier';
+    letter-spacing: 0.1em;
     font-size: 35px;
     color: #333;
     line-height: 90px;
