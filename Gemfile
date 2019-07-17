@@ -83,7 +83,6 @@ gem 'font-awesome-rails'
 gem 'haml-rails'
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'unicorn-worker-killer'
 
 group :production do
   gem 'unicorn', '5.4.1'
