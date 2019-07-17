@@ -3,6 +3,7 @@
   .side-bar
     = render 'render/side-bar'
     .container
+      = image_tag "yellowcar.jpg", class: "yellowcar", width: "800px", height: "500px"
       .post-list
         - @posts.each do |post|
           %li
