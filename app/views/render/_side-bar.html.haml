@@ -7,7 +7,7 @@
       =link_to 'Post', '/posts/new', class: 'item'
       %i.fas.fa-chevron-right
     %li.side-list-item
-      =link_to 'Profile', '#', class: 'item'
+      =link_to 'Profile', edit_user_path(current_user), class: 'item'
       %i.fas.fa-chevron-right
     %li.side-list-item
       =link_to 'Logout', '#', class: 'item'
