@@ -1,7 +1,12 @@
 .postsindex {
+  // background-color: rgb(245, 244, 243);
   .side-bar {
     display: flex;
     .container {
+      height: 1200px;
+      .yellowcar {
+        margin: 40px auto;
+      }
       .post-list {
         list-style: none;
         .list{
