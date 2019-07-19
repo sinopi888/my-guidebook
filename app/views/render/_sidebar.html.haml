@@ -4,11 +4,10 @@
       =link_to 'My Guide Book','/guidebook', class: 'item'
       %i.fas.fa-chevron-right
     %li.side-list-item
-      =link_to 'Post', '/posts/new', class: 'item'
+      =link_to "Post", "/posts/new", class: "item"
       %i.fas.fa-chevron-right
     %li.side-list-item
-      =link_to 'Profile'
-      -# , edit_user_path(current_user), class: 'item'
+      =link_to 'Profile', edit_user_path(current_user), class: 'item'
       %i.fas.fa-chevron-right
     %li.side-list-item
       =link_to 'Logout', '#', class: 'item'
