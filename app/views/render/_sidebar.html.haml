@@ -5,7 +5,7 @@
     %li.side-list-item
       = link_to "Post", "/posts/new", class: "item"
     %li.side-list-item
-      = link_to 'Profile', edit_user_path(current_user), class: 'item'
+      = link_to 'Profile', '#', class: 'item'
     %li.side-list-item
-      = link_to 'Logout', '#', class: 'item'
+      = link_to 'Logout', '/users/sign_out', class: 'item'
     
