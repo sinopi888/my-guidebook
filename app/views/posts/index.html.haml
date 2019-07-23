@@ -9,4 +9,8 @@
           %li
             = image_tag "#{post.image}", width: "700px", height: "400px"
             %br
-            = link_to "#{post.title}", post_path(post.id), class: 'list'
+          .post-list__image
+            = link_to "#{post.title}", post_path(post.id)
+            %br
+          .post-list__name
+            = post.user.nickname
